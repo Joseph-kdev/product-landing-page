@@ -1,0 +1,206 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsdWUlMjBiYWNrZ3JvdW5kc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    height: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    background-color: rgb(10, 9, 9);
+    z-index: 2;
+}
+.logo {
+    width: 45vw;
+}
+#header-img{
+    max-width: 100%;
+}
+#nav-bar{
+    width: 40vw;
+}
+#nav-bar ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+#nav-bar li {
+    border: #4D6973 1px solid;
+    margin-right: 4%;
+    max-width: 100%;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    padding: 1% 5%;
+    margin-top: 1.5%;
+}
+#regis{
+    margin-top: 15.5vh;
+    text-align: center;
+    background-color: #4D6973;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+#regis h2 {
+    font-size: 1.8em;
+}
+#form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 5px;
+}
+#email{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: lightblue 1.5px solid;;
+}
+#submit {
+    background-image: radial-gradient(#0F2027,#2C5364);
+    color: white;
+}
+#features {
+    background: #4D6973;
+    margin-top: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.feature{
+    display: flex;
+}
+.feature .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    color: #0F2027;
+    padding: 10px;
+}
+.feature .description{
+    width:fit-content;
+}
+.description h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.description p {
+    padding-top: 0;
+    margin-top: 0;
+}
+#How-it-works {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10em;
+}
+#pricing {
+    margin-top: 2em;
+}
+#pricing , .product {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+.product {
+    width: 80vw;
+    margin: 4px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background: #4D6973;
+}
+.product :hover {
+    background: #0F2027;
+}
+.product-title {
+    width: 100%;
+    background: #0F2027;
+}
+.product h3{
+    margin-bottom: 5px;
+}
+.product h4 {
+    margin-bottom: 0;
+}
+.product ol {
+    list-style: none;
+}
+.product .btn {
+    margin-bottom: 5px;
+    background: #0F2027;
+    color: white;
+}
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer ul li {
+    padding: 0 10px;
+    list-style: none;
+}
+footer span {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#regis,#features,#pricing :hover {
+    background: #2C5364;
+ }
+@media screen and (min-width:768px) {
+    :root {
+        --margin : auto
+    }
+    #nav-bar ul {
+        display: flex;
+    }
+    #regis, #features ,#How-it-works  {
+        width: 70vw;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+    }
+   #How-it-works {
+    background: #0F2027;
+    margin-top: 8vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    opacity: 0.8;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    }
+    .product {
+        max-width: 20vw;
+        row-gap: 1em;
+    }
+    #pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 2.5em;
+    }
+}
